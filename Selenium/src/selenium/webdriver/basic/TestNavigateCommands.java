@@ -29,6 +29,7 @@ WebDriver driver;
 	public void navigateCommands(){
 		try {
 			driver.navigate().to("http://flipkart.com");
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//span[starts-with(text(),'Appliances')]")).click();
 			driver.findElement(By.xpath("//span[contains(text(), 'Microwave Ovens')]")).click();
 			Thread.sleep(2000);
